@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.tracker-ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+#tracker-ball.on {
+    background-color: #2ecc71;
+}
+
+#tracker-ball.off {
+    background-color: #e74c3c;
+}
+
+#map {
+    width: 100%;
+    height: calc(100vh - 40px);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

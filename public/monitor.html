@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+    <link rel="stylesheet" href="monitor.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="status">
+            <strong>Tracker:</strong>
+            <span id="tracking-status">Loading...</span>
+            <span class="tracker-ball" id="tracker-ball"></span>
+        </div>
+        <div class="location">
+            <strong>Coordinates:</strong> <span id="location-coordinates">N/A</span>
+        </div>
+    </div>
+
+
+    <div id="map">
+    </div>
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

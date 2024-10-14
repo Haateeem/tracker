@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    touch-action: manipulation;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+
+.tracker-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 130px;
+    height: 130px;
+    border-radius: 30px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0 10px rgb(222, 222, 222);
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.tracker-button.off {
+    transform: scale(0.8);
+    filter: hue-rotate(240deg) saturate(4);
+}
+
+.tracker-button:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.1);
+}
+
+.tracker-button:active {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .tracker-button:hover {
+        background-color: transparent;
+        transform: scale(1.0);
+    }
+}
+
+.tracker-button img {
+    width: 110px;
+    transition: filter 0.3s ease;
+}
